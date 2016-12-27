@@ -1,0 +1,9 @@
+.fluid { @include fluid; }
+.hide { @include hide; }
+
+@each $prefix in $prefixes {
+	@include eq($prefix) {
+		.#{$prefix}-fluid { @include fluid; }
+		.#{$prefix}-hide { @include hide; }
+	}
+}

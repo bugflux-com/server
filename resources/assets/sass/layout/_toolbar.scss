@@ -1,0 +1,13 @@
+.toolbar {
+	background: $toolbar-bg;
+	border-bottom: 1px solid $toolbar-border;
+	white-space: nowrap;
+}
+
+.toolbar .tabs {
+	margin-bottom: -1px;
+}
+
+.toolbar .panel-grow {
+	white-space: nowrap;
+}

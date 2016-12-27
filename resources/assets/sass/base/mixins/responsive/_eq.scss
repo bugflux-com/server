@@ -1,0 +1,6 @@
+@mixin eq($media) {
+	@if index($media, 'xs') { @include media(null, $sm) { @content; }}
+	@if index($media, 'sm') { @include media($sm, $md - 1px) { @content; }}
+	@if index($media, 'md') { @include media($md, $lg - 1px) { @content; }}
+	@if index($media, 'lg') { @include media($lg) { @content; }}
+}

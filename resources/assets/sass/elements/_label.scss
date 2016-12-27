@@ -1,0 +1,16 @@
+.label {
+	display: inline-block;
+	padding: $label-padding;
+	border-radius: $label-border-radius;
+	background-color: $label-bg-info;
+	font-size: $label-font-size;
+	font-weight: $label-font-weight;
+	line-height: 1;
+	color: white;
+	border: none;
+
+	&.-info { background-color: $label-bg-info; }
+	&.-error { background-color: $label-bg-error; }
+	&.-warning { background-color: $label-bg-warning; }
+	&.-success { background-color: $label-bg-success; }
+}

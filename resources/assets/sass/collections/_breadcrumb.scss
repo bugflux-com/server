@@ -1,0 +1,32 @@
+.breadcrumb {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.breadcrumb > * {
+	display: inline-block;
+	color: $breadcrumb-link-color-normal;
+	font-size: $breadcrumb-font-size;
+	line-height: initial;
+
+	&:hover {
+		color: $breadcrumb-link-color-hover;
+	}
+
+	&:after {
+		// Divider between elements
+		content: " / ";
+		color: $breadcrumb-divider-color;
+	}
+
+	&:last-child {
+		// Highlight current item
+		font-weight: $weight-bold
+	}
+
+	&:last-child:after {
+		// Hide divider after last child
+		display: none;
+	}
+}

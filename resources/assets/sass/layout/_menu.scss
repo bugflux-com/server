@@ -1,0 +1,75 @@
+// Structure
+.menu {
+	position: absolute;
+	top: $nav-height;
+	left: 0; bottom: 0;
+	width: $menu-width;
+	max-width: 100%;
+	margin-left: -$menu-width;
+	transition: margin-left $menu-anim-duration;
+	overflow-y: hidden;
+
+	@include media($menu-breakpoint) {
+		margin-left: 0;
+	}
+}
+
+.menu-visible .menu {
+	margin-left: 0;
+}
+
+.menu-content {
+	position: absolute;
+	top: 0; bottom: $menu-footer-height;
+	left: 0; right: 0;
+	overflow-y: auto;
+}
+
+.menu-primary {
+	display: none;
+
+	@include media(null, $menu-breakpoint - 1px) {
+		display: block !important;
+		height: auto !important;
+	}
+
+	&.-expanded {
+		display: block !important;
+		height: auto !important;
+	}
+}
+
+.menu-primary + .menu-second {
+	border-top: 1px solid $menu-border;
+}
+
+.menu-footer {
+	position: absolute;
+	left: 0; right: 0; bottom: 0;
+	height: $menu-footer-height;
+}
+
+// Style
+.menu {
+	background: $menu-bg;
+	border-right: 1px solid $menu-border;
+	box-sizing: border-box;
+
+	@include media($nav-menu-breakpoint) {
+		top: $nav-height - 1px;
+	}
+}
+
+.menu-primary .links {
+	padding-bottom: $size-sm;
+
+	@include media(null, $nav-menu-breakpoint - 1px) {
+		padding-top: $size-sm;
+	}
+}
+
+.menu-footer {
+	border-top: 1px solid $menu-border;
+	box-sizing: border-box;
+	line-height: $menu-footer-height;
+}

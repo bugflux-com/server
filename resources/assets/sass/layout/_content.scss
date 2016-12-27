@@ -1,0 +1,21 @@
+// Structure
+.content {
+	position: absolute;
+	top: $nav-height;
+	left: 0; bottom: 0;
+	right: 0;
+	transition: all $menu-anim-duration;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background: white;
+
+	@include media($menu-breakpoint) {
+		left: $menu-width;
+		right: 0 !important;
+	}
+}
+
+.menu-visible .content {
+	left: $menu-width;
+	right: -$menu-width;
+}

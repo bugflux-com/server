@@ -1,0 +1,15 @@
+.tabs-item {
+	@extend .font-small;
+	display: inline-block;
+	padding: $tabs-padding;
+	border: 1px solid transparent;
+	border-bottom: none;
+
+	span { vertical-align: middle; }
+	[class^="icon-"] { font-size: $font-large; }
+}
+
+.tabs-item.-active {
+	border-color: $tabs-border;
+	background: $tabs-bg;
+}

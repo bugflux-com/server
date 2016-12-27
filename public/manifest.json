@@ -1,0 +1,14 @@
+{
+	"name": "Bugflux",
+	"description": "Bugflux is an open source project for better exception managing of deployed applications.",
+	"lang": "en-US",
+	"icons": [{
+		"src": "img/icons/manifest.ico",
+		"sizes": "64x64 128x128 256x256 512x512"
+	}],
+	"display": "minimal-ui",
+	"start_url": "/",
+	"orientation": "any",
+	"background_color": "#eb5345",
+	"theme_color": "#eb5345"
+}

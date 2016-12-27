@@ -1,0 +1,31 @@
+.input-group {
+	display: inline-block;
+	vertical-align: middle;
+	white-space: nowrap;
+	font-size: 0rem;
+
+	> * {
+		font-size: $font-size;
+	}
+
+	> *:not(:first-child) {
+		border-top-left-radius: 0 !important;
+		border-bottom-left-radius: 0 !important;
+		margin-left: -1px;
+	}
+
+	> *:not(:last-child) {
+		border-top-right-radius: 0 !important;
+		border-bottom-right-radius: 0 !important;
+	}
+
+	> *:hover {
+		position: relative;
+		z-index: 2;
+	}
+
+	> *:focus {
+		position: relative;
+		z-index: 3;
+	}
+}

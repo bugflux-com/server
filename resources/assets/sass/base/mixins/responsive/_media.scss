@@ -1,0 +1,12 @@
+/**
+ * @param min Minimum browser width or null to skip.
+ * @param max Maximum browser width or null to skip.
+ */
+@mixin media($min: null, $max: null) {
+	$query: 'all';
+
+	@if $min { $query: "#{$query} and (min-width: #{$min})"; }
+	@if $max { $query: "#{$query} and (max-width: #{$max})"; }
+
+	@media #{$query} { @content; }
+}

@@ -1,0 +1,5 @@
+@mixin lt($media) {
+	@if index($media, 'sm') { @include media(null, $sm - 1px) { @content; }}
+	@else if index($media, 'md') { @include media(null, $md - 1px) { @content; }}
+	@else if index($media, 'lg') { @include media(null, $lg - 1px) { @content; }}
+}

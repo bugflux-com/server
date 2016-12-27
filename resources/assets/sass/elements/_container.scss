@@ -1,0 +1,7 @@
+.container {
+	display: block;
+	margin: 0 auto;
+	padding-left: $container-padding;
+	padding-right: $container-padding;
+	max-width: $container-max-width;
+}

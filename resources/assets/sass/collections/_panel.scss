@@ -1,0 +1,28 @@
+.panel {
+	display: flex;
+	align-items: center;
+}
+
+.panel-shrink {
+	flex: 0 1 auto;
+	max-width: 100%;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.panel-grow {
+	flex: 1 1 auto;
+	max-width: 100%;
+	vertical-align: middle;
+	//overflow: hidden;
+	white-space: normal;
+}
+
+.panel-grow.-top,
+.panel-shrink.-top { align-self: flex-start; }
+
+.panel-grow.-middle,
+.panel-shrink.-middle { align-self: center; }
+
+.panel-grow.-bottom,
+.panel-shrink.-bottom { align-self: flex-end; }

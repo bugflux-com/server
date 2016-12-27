@@ -1,0 +1,91 @@
+// Structure
+.nav {
+	position: absolute;
+	top: 0; left: 0; right: 0;
+	height: $nav-height;
+}
+
+.nav-menu {
+	float: left;
+	width: $nav-height;
+	height: $nav-height;
+
+	@include media($nav-menu-breakpoint) {
+		width: $menu-width;
+	}
+}
+
+.nav-content {
+	margin-left: $nav-height;
+
+	@include media($nav-menu-breakpoint) {
+		margin-left: $menu-width;
+	}
+}
+
+// Style
+.nav {
+	background: $nav-bg;
+	border-bottom: 1px solid $nav-border;
+	box-sizing: border-box;
+	line-height: $nav-height;
+}
+
+.nav .dropdown-link {
+	min-width: $nav-height;
+}
+
+.nav .dropdown-menu {
+	line-height: $font-height;
+	margin-top: -5px;
+}
+
+.nav-menu {
+	background: white;
+	border-right: 1px solid $nav-border;
+	border-bottom: 1px solid $nav-border;
+	padding: 0 $container-padding;
+	box-sizing: border-box;
+	cursor: pointer;
+
+	@include media(null, $nav-menu-breakpoint - 1px) {
+		overflow: hidden;
+		text-align: center;
+		padding: 0;
+	}
+}
+
+.nav-menu-icon {
+	@extend .font-huge;
+	@extend .text-middle;
+}
+
+.nav-menu-text {
+    @extend .mlx;
+    @extend .text-middle;
+    @extend .font-small;
+    @extend .text-upper;
+    @extend .font-bold;
+
+	@include media(null, $nav-menu-breakpoint - 1px) {
+		display: none;
+	}
+}
+
+.nav-content-breadcrumb {
+	@extend .mrm;
+
+	@include media(null, $nav-breadcrumb-breakpoint - 1px) {
+		display: none;
+	}
+}
+
+.nav-content-notifications .dropdown-link {
+	position: relative;
+
+	.badge {
+		position: absolute;
+		left: 54%;
+		bottom: 54%;
+	}
+}

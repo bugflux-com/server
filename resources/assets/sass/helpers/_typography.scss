@@ -1,0 +1,42 @@
+.font-tiny { font-size: $font-tiny; }
+.font-small { font-size: $font-small; }
+.font-normal { font-size: $font-normal; }
+.font-large { font-size: $font-large; }
+.font-huge { font-size: $font-huge; }
+.font-giant { font-size: $font-giant; }
+
+.font-primary { color: $c-primary; }
+.font-second { color: $c-second; }
+
+.font-light { color: $gray-light; }
+.font-neutral { color: $gray-neutral; }
+.font-dark { color: $gray-dark; }
+
+.font-info { color: $c-info; }
+.font-error { color: $c-error; }
+.font-warning { color: $c-warning; }
+.font-success { color: $c-success; }
+
+.font-regular { font-weight: $weight-regular; }
+.font-bold { font-weight: $weight-bold; }
+
+.text-top { vertical-align: top; }
+.text-middle { vertical-align: middle; }
+.text-bottom { vertical-align: bottom; }
+
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-justify { text-align: justify; }
+.text-right { text-align: right; }
+
+.text-upper { text-transform: uppercase; }
+.text-lower { text-transform: lowercase; }
+.text-underline { text-decoration: underline; }
+
+.text-nowrap { white-space: nowrap; }
+.text-overflow {
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}

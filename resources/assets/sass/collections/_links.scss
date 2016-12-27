@@ -1,0 +1,16 @@
+.links {
+    a {
+        display: block;
+        padding: $size-xs $container-padding;
+        transition: background 0.3s, color 0.3s;
+
+        &:hover { background: rgba($link-color-hover, 0.1); }
+
+        [class^="icon-"] { font-size: $font-huge; }
+        span { vertical-align: middle; }
+    }
+}
+
+.links.-small a {
+    padding: ($size-xs * 2/3) ($container-padding * 2/3);
+}

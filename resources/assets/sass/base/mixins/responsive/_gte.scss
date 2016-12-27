@@ -1,0 +1,6 @@
+@mixin gte($media) {
+	@if index($media, 'sm') { @include media($sm) { @content; }}
+	@else if index($media, 'md') { @include media($md) { @content; }}
+	@else if index($media, 'lg') { @include media($lg) { @content; }}
+	@else { @content; }
+}

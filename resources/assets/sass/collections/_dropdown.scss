@@ -1,0 +1,25 @@
+.dropdown {
+	display: inline-block;
+
+	> .dropdown-link {
+		border: none;
+		background: transparent;
+		line-height: inherit;
+		cursor: pointer;
+	}
+
+	> .dropdown-menu {
+		display: none;
+		position: fixed;
+		min-width: $dropdown-menu-min-width;
+		max-width: $dropdown-menu-max-width;
+		background: $dropdown-menu-bg;
+		border: 1px solid $dropdown-menu-border;
+		border-radius: $dropdown-menu-radius;
+		box-sizing: border-box;
+		white-space: normal;
+		overflow-x: hidden;
+		overflow-y: auto;
+		z-index: 200;
+	}
+}

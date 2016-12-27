@@ -1,0 +1,5 @@
+@mixin gt($media) {
+	@if index($media, 'xs') { @include media($sm) { @content; }}
+	@else if index($media, 'sm') { @include media($md) { @content; }}
+	@else if index($media, 'md') { @include media($lg) { @content; }}
+}

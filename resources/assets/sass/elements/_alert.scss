@@ -1,0 +1,12 @@
+.alert {
+	background: $alert-bg-info;
+	border-radius: $alert-radius;
+	padding: $alert-padding;
+	color: white;
+	border: none;
+
+	&.-info { background-color: $alert-bg-info; }
+	&.-error { background-color: $alert-bg-error; }
+	&.-warning { background-color: $alert-bg-warning; }
+	&.-success { background-color: $alert-bg-success; }
+}
