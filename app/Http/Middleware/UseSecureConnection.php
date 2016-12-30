@@ -15,7 +15,7 @@ class UseSecureConnection
      */
     public function handle($request, Closure $next)
     {
-        if(!$request->secure() && config('app.secure_connection', true)) {
+        if(!$request->secure() && config('app.secure', true)) {
             return redirect()->secure($request->getRequestUri());
         }
 
